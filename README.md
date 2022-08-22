@@ -15,3 +15,10 @@ asciidoctor-epub3 -D output -a ebook-format=kf8 data/samples/sample-book.adoc
 # convert to html 
 
 asciidoctor my-document.adoc
+
+# convert adoc to markdown
+
+$ asciidoc -b docbook yourfile.adoc
+$ pandoc -f docbook -t markdown_strict yourfile.xml -o yourfile.md
+
+https://karinavarela.me/2020/05/06/converting-asciidoc-to-markdown/
