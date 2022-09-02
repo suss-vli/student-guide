@@ -7,9 +7,9 @@ NAME is a simple naming convention that works
 3. *M*eaningful words. The name should be meaningful english word first. 
 4. *E*xplain what it is or what it does. The name should explains
 
-## Regarding #1, removing space following this: 
+## Regarding #1, removing space by following these rules: 
 
-- For directories or files, use hyphen 
-- For variables, use underscore
-- For classes, use camelback 🐫
+- For directories, files or repo name, use hyphen ᠆
+- For variables, use underscore 
+- For classes, use CamelBack 🐫
   
