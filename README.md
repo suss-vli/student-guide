@@ -1,3 +1,7 @@
+# Requirement
+- [pandoc](https://pandoc.org)
+- [asciidoctor](https://asciidoctor.org)
+
 # Convert docx to adoc using pandoc
 
 > we should aim for a naming convention with no space and all down case. See name.md
