@@ -22,7 +22,7 @@ src: https://docs.asciidoctor.org/epub3-converter/latest/
 
 # convert adoc to markdown
 
-`asciidoc -b docbook yourfile.adoc`
+`asciidoc -b docbook yourfile.adoc`\
 `pandoc -f docbook -t markdown_strict yourfile.xml -o yourfile.md`
 
 https://karinavarela.me/2020/05/06/converting-asciidoc-to-markdown/
