@@ -1,7 +1,7 @@
 # FAQ
 
 
-### 1. Disconnected from Vocareum Labs / Cannot access Vocareum Labs
+## 1. Disconnected from Vocareum Labs / Cannot access Vocareum Labs
 
 For Vocareum labs, there is **a time limit of 5 hours** for session. The session will be automatically disconnected once the 5 hours is up. 
 
@@ -19,8 +19,9 @@ If the above method does not work, you can click on "Vocareum Lab" in Canvas to 
 
 If you have concerns about your submission, click [here](#3-submission-deadline) for more info.
 
+---
 
-### 2. Mongodb is disconnected. I am facing an error trying to reconnect Mongodb.
+## 2. Mongodb is disconnected. I am facing an error trying to reconnect Mongodb.
 
 Usually when this happens, it means that the previous Mongodb run was not logged off properly and the lock file was not removed.
 
@@ -36,7 +37,8 @@ Once you run the above commands, proceed to restart your lab by pressing “End 
 
 ![Start/End Lab](images/voc-start-end.png)
 
-### 3. Submission deadline rules
+---
+## 3. Submission deadline rules
 
 
 **Before deadline**
