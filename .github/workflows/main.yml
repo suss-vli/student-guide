@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with: 
-          repository: org/parent_repository
+          repository: suss-vli/suss-vli.github.io
           token: ${{ secrets.RELEASE_HUB_SECRET }}
 
       - name: Pull & update submodules recursively
