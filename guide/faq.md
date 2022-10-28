@@ -36,8 +36,12 @@ Once you run the above commands, proceed to restart your lab by pressing “End 
 
 ![Start/End Lab](images/voc-start-end.png)
 
-### 3. Submission deadline
+### 3. Submission deadline rules
 
-Students are able to submit multiple times before the assignment deadline. 
 
-Once the deadline is over, those who have at least 1 submission before deadline cannot submit again. Those who have no submission before the deadline will only have 1 chance of submitting their assignment.
+**Before deadline**
+- Students are able to submit multiple times before the assignment deadline. 
+
+**After deadline**
+- Once the deadline is over, those who have at least 1 submission before deadline cannot submit again. 
+- Those who have no submission before the deadline will only have 1 chance of submitting their assignment.
