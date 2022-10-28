@@ -9,9 +9,8 @@ You can check on the time left for your session from your work space, beside the
 
 ![Session Time](images/voc-session-time.png)
 
-You can re-access your lab by closing the lab and starting a new lab session using the "End Lab" and "Start Lab" buttons in your workspace. 
+You can re-access your lab by closing the lab and starting a new lab session using the "End Lab" and "Start Lab" buttons. 
 
-![Start/End Lab](images/voc-start-end.png)
 
 If the above method does not work, you can click on "Vocareum Lab" in Canvas to reload the Vocareum lab to start a new lab session.
 
