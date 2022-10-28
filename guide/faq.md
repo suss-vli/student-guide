@@ -23,7 +23,12 @@ If you have concerns about your submission, click [here](#3-submission-deadline)
 
 ## 2. Mongodb is disconnected. I am facing an error trying to reconnect Mongodb.
 
+<details>
+  <summary>Click If you are interested in the explanation.</summary>  
 Usually when this happens, it means that the previous Mongodb run was not logged off properly and the lock file was not removed.
+
+</details>
+
 
 For a quick fix, run the following commands on your terminal.
 
