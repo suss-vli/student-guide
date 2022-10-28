@@ -1,3 +1,3 @@
 # Student Guide
 
-Coming soon... :)
+Coming soon... :) :)
