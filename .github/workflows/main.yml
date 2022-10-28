@@ -15,10 +15,10 @@ jobs:
           repository: suss-vli/suss-vli.github.io
           token: ${{ secrets.RELEASE_HUB_SECRET }}
 
-      # - name: Pull & update submodules recursively
-      #   run: |
-      #     git submodule update --init --recursive
-      #     git submodule update --recursive --remote
+      - name: Pull & update submodules recursively
+        run: |
+          git submodule update --init --recursive
+          git submodule update --recursive --remote
       - name: Commit
         run: |
           git config user.email "actions@github.com"
