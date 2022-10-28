@@ -17,32 +17,32 @@ If the above method does not work, you can click on "Vocareum Lab" in Canvas to 
 ![Start/End Lab](images/voc-canvas.png)
 
 
-If you have concerns about your submission, click [here](#3-submission-deadline) for more info.
+If you have concerns about your submission, click [here](#3-submission-deadline-rules) for more info.
 
 ---
 
 ## 2. Mongodb is disconnected. I am facing an error trying to reconnect Mongodb.
 
-<details>
-  <summary>Click If you are interested in the explanation.</summary>  
-Usually when this happens, it means that the previous Mongodb run was not logged off properly and the lock file was not removed.
-
-</details>
-
-
 For a quick fix, run the following commands on your terminal.
-
->`cd /home/labsuser/dbfiles`
-
->`rm -rfv WiredTiger.lock mongod.lock`
-
->`sudo mongod --dbpath /home/labsuser/dbfiles --repair`
+```
+cd /home/labsuser/dbfiles
+rm -rfv WiredTiger.lock mongod.lock
+sudo mongod --dbpath /home/labsuser/dbfiles --repair
+```
 
 Once you run the above commands, proceed to restart your lab by pressing “End Lab” on the top right corner of your workspace and press “Start Lab” to start it again.
 
 ![Start/End Lab](images/voc-start-end.png)
 
+
+<details>
+  <summary>Click for explanation.</summary>  
+Usually when this happens, it means that the previous Mongodb run was not logged off properly and the lock file was not removed. The commands above try to remove hte lock file.
+
+</details>
+
 ---
+
 ## 3. Submission deadline rules
 
 
