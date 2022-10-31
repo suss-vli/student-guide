@@ -44,6 +44,7 @@ jobs:
             echo "Updated parent repo"
           else
             echo "no updates to parent repo"
+          fi
       - name: Commit
         run: |
           if ${ env.flag } == true; then
@@ -54,3 +55,4 @@ jobs:
             git push
           else
             echo "no updates to parent repo"
+          fi
