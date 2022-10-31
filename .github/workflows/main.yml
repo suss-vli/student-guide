@@ -38,7 +38,7 @@ jobs:
 
       - name: Pull & update submodules recursively
         run: |
-          if ${ env.flag } == true; then      
+          if ${{ env.flag }} == true; then      
             git submodule update --init
             git submodule update --remote
             echo "Updated parent repo"
@@ -47,7 +47,7 @@ jobs:
           fi
       - name: Commit
         run: |
-          if ${ env.flag } == true; then
+          if ${{ env.flag }} == true; then
             git config user.email "actions@github.com"
             git config user.name "GitHub Actions - update submodules"
             git add --all
