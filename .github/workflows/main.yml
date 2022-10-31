@@ -30,7 +30,6 @@ jobs:
 
   update:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
         with: 
@@ -39,12 +38,19 @@ jobs:
 
       - name: Pull & update submodules recursively
         run: |
-          git submodule update --init
-          git submodule update --remote
+          if ${ env.flag } == true; then      
+            git submodule update --init
+            git submodule update --remote
+            echo "Updated parent repo"
+          else
+            echo "no updates to parent repo"
       - name: Commit
         run: |
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions - update submodules"
-          git add --all
-          git commit -m "Updated student-guide submodules" || echo "No changes to commit"
-          git push
+          if ${ env.flag } == true; then
+            git config user.email "actions@github.com"
+            git config user.name "GitHub Actions - update submodules"
+            git add --all
+            git commit -m "Updated student-guide submodules" || echo "No changes to commit"
+            git push
+          else
+            echo "no updates to parent repo"
