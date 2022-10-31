@@ -6,28 +6,6 @@ on:
       - main
 
 jobs:
-  # Echo-On-Commit:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: "Checkout Repository"
-  #       uses: actions/checkout@v2
-
-  #     - name: "Set flag from Commit"
-  #       env:
-  #         COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[update-site]') }}
-  #       run: |
-  #         if ${COMMIT_VAR} == true; then
-  #           echo "flag=true" >> $GITHUB_ENV
-  #           echo "flag set to true"
-  #         else
-  #           echo "flag=false" >> $GITHUB_ENV
-  #           echo "flag set to false"
-  #         fi
-
-  #     - name: "Use flag if true"
-  #       if: env.flag
-  #       run: echo "Flag is available and true"
-
   update:
     runs-on: ubuntu-latest
     steps:
@@ -47,5 +25,5 @@ jobs:
             git config user.email "actions@github.com"
             git config user.name "GitHub Actions - update submodules"
             git add --all
-            git commit -m "Updated student-guide submodules" || echo "No changes to commit"
+            git commit -m "[${{ github.event.head_commit.message }}]" || echo "No changes to commit"
             git push
