@@ -6,27 +6,27 @@ on:
       - main
 
 jobs:
-  Echo-On-Commit:
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Checkout Repository"
-        uses: actions/checkout@v2
+  # Echo-On-Commit:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: "Checkout Repository"
+  #       uses: actions/checkout@v2
 
-      - name: "Set flag from Commit"
-        env:
-          COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[update-site]') }}
-        run: |
-          if ${COMMIT_VAR} == true; then
-            echo "flag=true" >> $GITHUB_ENV
-            echo "flag set to true"
-          else
-            echo "flag=false" >> $GITHUB_ENV
-            echo "flag set to false"
-          fi
+  #     - name: "Set flag from Commit"
+  #       env:
+  #         COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[update-site]') }}
+  #       run: |
+  #         if ${COMMIT_VAR} == true; then
+  #           echo "flag=true" >> $GITHUB_ENV
+  #           echo "flag set to true"
+  #         else
+  #           echo "flag=false" >> $GITHUB_ENV
+  #           echo "flag set to false"
+  #         fi
 
-      - name: "Use flag if true"
-        if: env.flag
-        run: echo "Flag is available and true"
+  #     - name: "Use flag if true"
+  #       if: env.flag
+  #       run: echo "Flag is available and true"
 
   update:
     runs-on: ubuntu-latest
@@ -37,22 +37,15 @@ jobs:
           token: ${{ secrets.RELEASE_HUB_SECRET }}
 
       - name: Pull & update submodules recursively
+        if: "contains(github.event.head_commit.message, 'update-site')"
         run: |
-          if ${{ env.flag }} == true; then      
             git submodule update --init
             git submodule update --remote
-            echo "Updated parent repo"
-          else
-            echo "no updates to parent repo"
-          fi
       - name: Commit
+        if: "contains(github.event.head_commit.message, 'update-site')"
         run: |
-          if ${{ env.flag }} == true; then
             git config user.email "actions@github.com"
             git config user.name "GitHub Actions - update submodules"
             git add --all
             git commit -m "Updated student-guide submodules" || echo "No changes to commit"
             git push
-          else
-            echo "no updates to parent repo"
-          fi
