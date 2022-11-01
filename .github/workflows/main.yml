@@ -15,12 +15,12 @@ jobs:
           token: ${{ secrets.RELEASE_HUB_SECRET }}
 
       - name: Pull & update submodules recursively
-        if: "contains(github.event.head_commit.message, 'update-site')"
+        if: "contains(github.event.head_commit.message, '[ci run]')"
         run: |
             git submodule update --init
             git submodule update --remote
       - name: Commit
-        if: "contains(github.event.head_commit.message, 'update-site')"
+        if: "contains(github.event.head_commit.message, '[ci run]')"
         run: |
             git config user.email "actions@github.com"
             git config user.name "GitHub Actions - update submodules"
