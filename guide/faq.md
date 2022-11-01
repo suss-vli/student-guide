@@ -1,7 +1,3 @@
----
-title:
----
-
 # FAQ - Vocareum
 
 ## 1. Disconnected from Vocareum Labs / Cannot access Vocareum Labs
