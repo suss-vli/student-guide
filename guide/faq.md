@@ -1,4 +1,4 @@
-# FAQ
+# FAQ - Vocareum
 
 
 ## 1. Disconnected from Vocareum Labs / Cannot access Vocareum Labs
@@ -52,3 +52,22 @@ Usually when this happens, it means that the previous Mongodb run was not logged
 **After deadline**
 - Once the deadline is over, those who have at least 1 submission before deadline cannot submit again. 
 - Those who have no submission before the deadline will only have 1 chance of submitting their assignment.
+
+
+# FAQ - ALS
+
+## 1. First faq
+
+---
+
+## 2. Second faq
+
+---
+# FAQ - AWS
+
+## 1. First faq
+
+---
+## 2. Second faq
+
+---
