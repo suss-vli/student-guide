@@ -52,6 +52,47 @@ Usually when this happens, it means that the previous Mongodb run was not logged
 - Once the deadline is over, those who have at least 1 submission before deadline cannot submit again. 
 - Those who have no submission before the deadline will only have 1 chance of submitting their assignment.
 
+---
+
+# FAQ - Submitter
+
+## 1. If I have 1 hour left to my submission deadline and I do not have any docx, how can I submit?
+You can always create a new docx before submission.
+
+Note that you are responsible for your own submission and submitting on time.
+
+## 2. If I have multiple flask projects (i.e TMA for q1 and q2), how do I prepare for submission?
+
+You can put all of your projects under one directory and zip up that directory. [Insert a sample image of such cases]
+
+## 3. I submitted wrongly. What should I do?
+
+If you made a mistake for your submission, just resubmit and ignore the last submission. We only keep the latest submission. 
+
+## 4. My virtual environment is not called `venv`. What should I do?
+
+Please run the following command on a test project first. Duplicate your project to test it. You should delete your current venv. Then run the following command to recreate venv:
+```
+python -m venv venv
+source /venv/bin/activate
+pip3 install -r requirements.txt
+```
+
+## 5. My TMA/ECA project is on my laptop. How do I submit it on Vocareum?
+
+All projects should be done on Vocareum. We do not support work that is not done on vocareum. See [insert link to state that all work should be done on vocareum].
+
+This is to ensure that your project is able to run on Vocareum for it to be graded. If you project is unable to run on Vocareum, it will affect your grade.
+
+## 6. How do I upload my project to Vocareum?
+
+Note that all TMA/ECA projects are supposed to be done on Vocareum. If you are working on your local machine, it is your responsibility to make it compatible to Vocareum.
+
+To upload to Vocareum, simply drag and drop your directory into VSCode. 
+
+[Show with a gif]
+
+---
 
 # FAQ - ALS
 
