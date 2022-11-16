@@ -63,7 +63,8 @@ Note that you are responsible for your own submission and submitting on time.
 
 ## 2. If I have multiple flask projects (i.e TMA for q1 and q2), how do I prepare for submission?
 
-You can put all of your projects under one directory and zip up that directory. [Insert a sample image of such cases]
+You can put all of your projects under one directory and select the directory to zip up all the projects together for submission. 
+![Multiple projects](images/multiple_qns.png)
 
 ## 3. I submitted wrongly. What should I do?
 
