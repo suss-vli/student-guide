@@ -90,7 +90,7 @@ Note that all TMA/ECA projects are supposed to be done on Vocareum. If you are w
 
 To upload to Vocareum, simply drag and drop your directory into VSCode. 
 
-[Show with a gif]
+![Upload project](images/upload.gif)
 
 ---
 
