@@ -61,35 +61,46 @@ You can always create a new docx before submission.
 
 Note that you are responsible for your own submission and submitting on time.
 
+---
+
 ## 2. If I have multiple flask projects (i.e TMA for q1 and q2), how do I prepare for submission?
 
 You can put all of your projects under one directory and select the directory to zip up all the projects together for submission. 
+
 ![Multiple projects](images/multiple_qns.png)
+
+---
 
 ## 3. I submitted wrongly. What should I do?
 
 If you made a mistake for your submission, just resubmit and ignore the last submission. We only keep the latest submission. 
 
+---
+
 ## 4. My virtual environment is not called `venv`. What should I do?
 
 Please run the following command on a test project first. Duplicate your project to test it. You should delete your current venv. Then run the following command to recreate venv:
 ```
-python -m venv venv
+python3 -m venv venv
 source /venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
+---
+
 ## 5. My TMA/ECA project is on my laptop. How do I submit it on Vocareum?
 
-All projects should be done on Vocareum. We do not support work that is not done on vocareum. See [insert link to state that all work should be done on vocareum].
+Note that all TMA/ECA projects should be done on Vocareum. If you are working on your local machine, it is your responsibility to make it compatible to Vocareum. This is to ensure that your project is able to run on Vocareum for it to be graded. If your project is unable to run on Vocareum, it will affect your grade.
 
-This is to ensure that your project is able to run on Vocareum for it to be graded. If you project is unable to run on Vocareum, it will affect your grade.
+To submit on Vocareum:
+- [Upload your project to Vocareum](#6-how-do-i-upload-my-project-to-vocareum)
+- 
+
+---
 
 ## 6. How do I upload my project to Vocareum?
 
-Note that all TMA/ECA projects are supposed to be done on Vocareum. If you are working on your local machine, it is your responsibility to make it compatible to Vocareum.
-
-To upload to Vocareum, simply drag and drop your directory into VSCode. 
+To upload files and folders to Vocareum, simply drag and drop your directory into VSCode. 
 
 ![Upload project](images/upload.gif)
 
