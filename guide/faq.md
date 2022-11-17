@@ -56,13 +56,9 @@ Usually when this happens, it means that the previous Mongodb run was not logged
 
 ## 4. How do I upload my project to Vocareum?
 
-You can upload your project files to Vocareum from the IDE. Once uploaded, you can also find them in the Vocareum `desktop`.
-
-To upload, follow the instructions below for the IDE that you are using.
-
 **For VSCode IDE**
 
-To upload files and directories to VSCode, simply drag and drop your directory into VSCode. 
+Simply drag and drop your directory into the explorer of IDE on Vocareum. See below.
 
 ![Upload project](images/upload.gif)
 
@@ -109,7 +105,7 @@ Step 2: Download via VSCode
 ## 1. If I have 1 hour left to my submission deadline and I do not have any docx, how can I submit?
 You can always create a new docx before submission.
 
-Note that you are responsible for your own submission and submitting on time.
+Note: You are responsible for your own submission and submitting on time.
 
 ---
 
@@ -140,7 +136,7 @@ pip3 install -r requirements.txt
 
 ## 5. My TMA/ECA project is on my laptop. How do I submit it on Vocareum using the submitter?
 
-Note that all TMA/ECA projects should be done on Vocareum. If you are working on your local machine, it is your responsibility to make it compatible to Vocareum. See <insert link to state that all work should be done on vocareum>
+Note: All TMA/ECA projects should be done on Vocareum. If you are working on your local machine, it is your responsibility to make it compatible to Vocareum. See <insert link to state that all work should be done on vocareum>
 
 To submit on Vocareum:
 1. [Upload your project to Vocareum](#4-how-do-i-upload-my-project-to-vocareum)
