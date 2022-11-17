@@ -54,6 +54,56 @@ Usually when this happens, it means that the previous Mongodb run was not logged
 
 ---
 
+## 4. How do I upload my project to Vocareum?
+
+You can upload your project files to Vocareum from the IDE. Once uploaded, you can also find them in the Vocareum `desktop`.
+
+To upload, follow the instructions below for the IDE that you are using.
+
+**For VSCode IDE**
+
+To upload files and directories to VSCode, simply drag and drop your directory into VSCode. 
+
+![Upload project](images/upload.gif)
+
+**For Jupyter Lab IDE**
+
+To upload files to JupyterLab, click into the directory you wish to upload to. Click on the upload button and select the file to upload.
+
+![Upload file on Jupyter](images/upload_jupyter.gif)
+
+---
+
+## 5. How do I download files from Vocareum?
+
+**For VSCode IDE**
+
+Step 1: Zip your files into an archive.
+
+- Go into your Vocareum `desktop`.
+- Put your files into a directory.
+- Right click and select "Create Archive". 
+- Select `zip` for the the "Archive Type" and click on "Create".
+
+![zip](images/zip.png)
+
+Step 2: Download via VSCode
+
+- Go to the VSCode IDE.
+- Right click on the zip file and select "Download"
+
+![Download vscode](images/download_vscode.png)
+
+
+**For JupyterLab IDE**
+
+- Right click on the file you wish to download.
+- Select "Download".
+
+![Download Jupyterlab](images/download_juptyer.png)
+
+---
+
 # FAQ - Submitter
 
 ## 1. If I have 1 hour left to my submission deadline and I do not have any docx, how can I submit?
@@ -73,7 +123,7 @@ You can put all of your projects under one directory and select the directory to
 
 ## 3. I submitted wrongly. What should I do?
 
-If you made a mistake for your submission, just resubmit and ignore the last submission. We only keep the latest submission. 
+If you made a mistake for your submission, just resubmit and ignore the last submission. We will only keep the latest submission. 
 
 ---
 
@@ -88,21 +138,14 @@ pip3 install -r requirements.txt
 
 ---
 
-## 5. My TMA/ECA project is on my laptop. How do I submit it on Vocareum?
+## 5. My TMA/ECA project is on my laptop. How do I submit it on Vocareum using the submitter?
 
-Note that all TMA/ECA projects should be done on Vocareum. If you are working on your local machine, it is your responsibility to make it compatible to Vocareum. This is to ensure that your project is able to run on Vocareum for it to be graded. If your project is unable to run on Vocareum, it will affect your grade.
+Note that all TMA/ECA projects should be done on Vocareum. If you are working on your local machine, it is your responsibility to make it compatible to Vocareum. See <insert link to state that all work should be done on vocareum>
 
 To submit on Vocareum:
-- [Upload your project to Vocareum](#6-how-do-i-upload-my-project-to-vocareum)
-- 
-
----
-
-## 6. How do I upload my project to Vocareum?
-
-To upload files and folders to Vocareum, simply drag and drop your directory into VSCode. 
-
-![Upload project](images/upload.gif)
+1. [Upload your project to Vocareum](#4-how-do-i-upload-my-project-to-vocareum)
+2. From the submitter, select the project directory to submit.
+3. Click on the "Submit" button from Vocareum Lab's workspace.
 
 ---
 
