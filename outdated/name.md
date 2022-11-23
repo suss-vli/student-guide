@@ -22,3 +22,18 @@ NAME is a simple naming convention that works
 
 For example, i will use `i` over `index` for an index. The reason is because `i` is not that important. 
 
+3. Underscore is always clearer than camelBack in my opinion. 
+
+4. `each_item` in a list is better than `e` or `each`. This may be a matter of taste instead of clarity. 
+
+5. `course_name_for_january_lab` is always better than `course_name_4_january_lab`
+
+
+
+## Other other rules 
+
+Names are related to context and context is related to the actual problem. Thus, programmers who are not the actual problem solver will find it hard to give a good name. 
+When the problem changes, the context changes. The name should be updated to make the code readable 
+
+
+
