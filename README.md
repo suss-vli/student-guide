@@ -1,4 +1,5 @@
-
+# Student Guide
+This is supposed to be the student guide.
 # Try asciidoc
 
 https://asciidoc.org/#try

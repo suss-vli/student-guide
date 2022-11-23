@@ -13,3 +13,12 @@ NAME is a simple naming convention that works
 - For variables, use underscore 
 - For classes, use CamelBack 🐫
   
+
+## Other rules for naming 
+
+1. Clarity is always more important than conciseness. For example, consider a function that check true or false, i will use `check_true_or_false` as the function name over `check_truth` or `check_truthy`
+
+2. The less important a variable/method name, the more concise it should be. 
+
+For example, i will use `i` over `index` for an index. The reason is because it is not that important. 
+
