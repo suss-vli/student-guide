@@ -20,5 +20,5 @@ NAME is a simple naming convention that works
 
 2. The less important a variable/method name, the more concise it should be. 
 
-For example, i will use `i` over `index` for an index. The reason is because it is not that important. 
+For example, i will use `i` over `index` for an index. The reason is because `i` is not that important. 
 
