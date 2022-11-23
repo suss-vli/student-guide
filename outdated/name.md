@@ -26,7 +26,7 @@ For example, i will use `i` over `index` for an index. The reason is because `i`
 
 4. `each_item` in a list is better than `e` or `each`. This may be a matter of taste instead of clarity. 
 
-5. `course_name_for_january_lab` is always better than `course_name_4_january_lab`
+5. `course_name_for_january_lab` is always better than `course_name_4_january_lab`. ALWAYS.
 
 
 
