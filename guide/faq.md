@@ -2,7 +2,7 @@
 
 ## 1. Disconnected from Vocareum Labs / Cannot access Vocareum Labs
 
-For Vocareum labs, there is **a time limit of 5 hours** for session. The session will be automatically disconnected once the 5 hours is up. 
+For Vocareum labs, there is **a time limit of 5 hours** for each session. The session will be automatically disconnected once the 5 hours is up. 
 
 You can check on the time left for your session from your work space, beside the “Start Lab” button (see image below). 
 
