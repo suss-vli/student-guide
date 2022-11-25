@@ -1,3 +1,8 @@
+# Introduction
+Naming is part of the hard things in software projects. Meaningful names are highly related to readability, understanding and ultimately maintaining of the software product. This article is an attempt to come up with some principles and convention that will manage names. 
+
+We aim to produce meaningful, consistent and descriptive names from these ideas. 
+
 # NAME stands for
 
 NAME is a simple naming convention that works
