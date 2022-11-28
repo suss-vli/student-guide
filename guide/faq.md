@@ -103,7 +103,8 @@ Step 2: Download via VSCode
 # FAQ - Submitter
 
 ## 1. If I have 1 hour left to my submission deadline and I do not have any docx, how can I submit?
-You can always create a new docx before submission.
+
+You can always create a new docx before submission. Your .docx document cannot be empty. 
 
 Note: You are responsible for your own submission and submitting on time.
 
@@ -147,10 +148,24 @@ To submit on Vocareum:
   
 ## 6. Which file format is acceptable for recording?
 
-We only accept *gifs* for recording. You need to zip up the recordings using the Vocareum zip utility.
+We only accept **gifs** for recording. You need to zip up the recordings using the Vocareum zip utility.
 
   
+---
   
+## 7. The submitter is rejecting my submission because of the virtual environment. What can I do? 
+
+The submitter only accept one virtual environment called **venv**.
+
+If you have multiple virtual environments, please remove them and only keep one. You need to create a virtual envrionment called **venv**.  
+
+```
+python3 -m venv venv
+source /venv/bin/activate
+pip3 install -r requirements.txt
+```
+  
+Then, zip up your submission and try submitting again. 
  
 ---
 
