@@ -144,6 +144,15 @@ To submit on Vocareum:
 3. Click on the "Submit" button from Vocareum Lab's workspace.
 
 ---
+  
+## 6. Which file format is acceptable for recording?
+
+We only accept *gifs* for recording. You need to zip up the recordings using the Vocareum zip utility.
+
+  
+  
+ 
+---
 
 # FAQ - ALS
 
