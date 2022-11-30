@@ -155,10 +155,9 @@ We only accept **gifs** for recording. You need to zip up the recordings using t
   
 ## 7. The submitter is rejecting my submission because of the virtual environment. What can I do? 
 
-The submitter only accept one virtual environment called **venv**.
+You have two options. Option one is to delete all virtual environments. Another options is to name your virtual environment as **venv**. 
 
-If you have multiple virtual environments, please remove them and only keep one. You need to create a virtual envrionment called **venv**.  
-
+To recreate a virtual environment, follow the commands below. 
 ```
 python3 -m venv venv
 source /venv/bin/activate
@@ -166,7 +165,14 @@ pip3 install -r requirements.txt
 ```
   
 Then, zip up your submission and try submitting again. 
- 
+  
+  
+## 8. The submitter is rejecting my submission because of my recordings. What can I do? 
+  
+The submitter only allow gifs as the recording. If you are using mp4, please save your recording as gif and resubmit them.
+
+If you have multiple recordings, please zip up using the vocareum utility. 
+  
 ---
 
 # FAQ - ALS
