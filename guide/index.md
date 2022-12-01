@@ -1,3 +1,0 @@
-# Student Guide
-
-Coming soon!!
