@@ -16,11 +16,75 @@ If the above method does not work, you can click on "Vocareum Lab" in Canvas to 
 ![Start/End Lab](images/voc-canvas.png)
 
 
-If you have concerns about your submission, click [here](#3-submission-deadline-rules) for more info.
+If you have concerns about your submission, click [here](#2-submission-deadline-rules) for more info.
 
 ---
 
-## 2. Mongodb is disconnected. I am facing an error trying to reconnect Mongodb.
+## 2. Submission deadline rules
+
+
+**Before deadline**
+- Students are able to submit multiple times before the assignment deadline. 
+
+**After deadline**
+- Once the deadline is over, those who have at least 1 submission before deadline cannot submit again. 
+- Those who have no submission before the deadline will only have 1 chance of submitting their assignment.
+
+---
+
+## 3. How do I upload my project to Vocareum?
+
+**For VSCode IDE**
+
+Simply drag and drop your directory into the explorer of IDE on Vocareum. See below.
+
+![Upload project](images/upload.gif)
+
+**For Jupyter Lab IDE**
+
+To upload files to JupyterLab, click into the directory you wish to upload to. Click on the upload button and select the file to upload.
+
+![Upload file on Jupyter](images/upload-jupyter.gif)
+
+---
+
+## 4. How do I download files from Vocareum?
+
+**For VSCode IDE**
+
+To download a single file, right click on the file and click on "Download".
+
+![Download vscode](images/download-vscode1.png)
+
+To download multiple files at one time, follow the steps below.
+
+Step 1: Zip your files into an archive.
+
+- Go into your Vocareum `desktop`.
+- Put your files into a directory.
+- Right click and select "Create Archive". 
+- Select `zip` for the the "Archive Type" and click on "Create".
+
+![zip](images/zip.png)
+
+Step 2: Download via VSCode
+
+- Go to the VSCode IDE.
+- Right click on the zip file and select "Download"
+
+![Download vscode](images/download-vscode.png)
+
+
+**For JupyterLab IDE**
+
+- Right click on the file you wish to download.
+- Select "Download".
+
+![Download Jupyterlab](images/download-juptyer.png)
+
+---
+
+## 5. Mongodb is disconnected. I am facing an error trying to reconnect Mongodb.
 
 For a quick fix, run the following commands on your terminal.
 ```
@@ -42,61 +106,13 @@ Usually when this happens, it means that the previous Mongodb run was not logged
 
 ---
 
-## 3. Submission deadline rules
+## 6. I forgot my password for my mongodb-compass keyring, what can I do?
 
-
-**Before deadline**
-- Students are able to submit multiple times before the assignment deadline. 
-
-**After deadline**
-- Once the deadline is over, those who have at least 1 submission before deadline cannot submit again. 
-- Those who have no submission before the deadline will only have 1 chance of submitting their assignment.
-
----
-
-## 4. How do I upload my project to Vocareum?
-
-**For VSCode IDE**
-
-Simply drag and drop your directory into the explorer of IDE on Vocareum. See below.
-
-![Upload project](images/upload.gif)
-
-**For Jupyter Lab IDE**
-
-To upload files to JupyterLab, click into the directory you wish to upload to. Click on the upload button and select the file to upload.
-
-![Upload file on Jupyter](images/upload_jupyter.gif)
-
----
-
-## 5. How do I download files from Vocareum?
-
-**For VSCode IDE**
-
-Step 1: Zip your files into an archive.
-
-- Go into your Vocareum `desktop`.
-- Put your files into a directory.
-- Right click and select "Create Archive". 
-- Select `zip` for the the "Archive Type" and click on "Create".
-
-![zip](images/zip.png)
-
-Step 2: Download via VSCode
-
-- Go to the VSCode IDE.
-- Right click on the zip file and select "Download"
-
-![Download vscode](images/download_vscode.png)
-
-
-**For JupyterLab IDE**
-
-- Right click on the file you wish to download.
-- Select "Download".
-
-![Download Jupyterlab](images/download_juptyer.png)
+Reset your password:
+1. In Vocareum's terminal, run the command: `rm -rfv ~/.local/share/keyrings/Default_keyring.keyring` 
+2. Close and re-launch mongodb-compass for the prompt to set the password for a new keyring. 
+![mongodb-compass password prompt](images/mongodb-set-keyring.png)
+3. Enter a new password for the keyring.
 
 ---
 
@@ -104,7 +120,7 @@ Step 2: Download via VSCode
 
 ## 1. If I have 1 hour left to my submission deadline and I do not have any docx, how can I submit?
 
-You can always create a new docx before submission. Your .docx document cannot be empty. 
+You can always create a new docx before submission. Your `.docx` document cannot be empty. 
 
 Note: You are responsible for your own submission and submitting on time.
 
@@ -114,7 +130,7 @@ Note: You are responsible for your own submission and submitting on time.
 
 You can put all of your projects under one directory and select the directory to zip up all the projects together for submission. 
 
-![Multiple projects](images/multiple_qns.png)
+![Multiple projects](images/multiple-qns.png)
 
 ---
 
@@ -140,7 +156,7 @@ pip3 install -r requirements.txt
 Note: All TMA/ECA projects should be done on Vocareum. If you are working on your local machine, it is your responsibility to make it compatible to Vocareum. See <insert link to state that all work should be done on vocareum>
 
 To submit on Vocareum:
-1. [Upload your project to Vocareum](#4-how-do-i-upload-my-project-to-vocareum)
+1. [Upload your project to Vocareum](#3-how-do-i-upload-my-project-to-vocareum)
 2. From the submitter, select the project directory to submit.
 3. Click on the "Submit" button from Vocareum Lab's workspace.
 
@@ -166,7 +182,8 @@ pip3 install -r requirements.txt
   
 Then, zip up your submission and try submitting again. 
   
-  
+---
+
 ## 8. The submitter is rejecting my submission because of my recordings. What can I do? 
   
 The submitter only allow gifs as the recording. If you are using mp4, please save your recording as gif and resubmit them.
@@ -177,7 +194,17 @@ If you have multiple recordings, please zip up using the vocareum utility.
 
 # FAQ - ALS
 
-## 1. First faq
+## 1. (For ICT257 students) What to do if `rht-vmctl reset <vmname>` does not achieve its intended objective and you are still stuck with a broken `<vmname>`?
+
+Perform the following to revert to the original checkpoint:
+1. Open Hyper-V Manager
+2. Click on that particular VM
+3. Under the checkpoints section, click on the “RESTORE HERE!” checkpoint
+4. Click on Apply button on the right
+![Apply button](images/als-vm-apply.jpg)
+5. In this Apply Checkpoint prompt, click on Apply button.
+![confirm apply](images/als-vm-apply1.jpg)
+6. It will revert back to the default state and please try to start the virtual machine again.
 
 ---
 
